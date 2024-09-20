@@ -179,6 +179,24 @@ i{
 i:hover{
     color: #3FA2F6;
 }
+.learn{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: "Fugaz One", sans-serif;
+    color: #FAFFAF;
+    text-align: center;
+
+}
+.lang{
+    display: grid;
+    align-content: top;
+    place-items: top;
+     min-height:100vh;
+    margin-top: 100px;
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 
 
