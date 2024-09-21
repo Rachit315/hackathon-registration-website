@@ -123,7 +123,7 @@ body, html {
 }
 
 .button-27:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    
     transform: translateY(-2px);
 }
 
@@ -191,12 +191,84 @@ i:hover{
     display: grid;
     align-content: top;
     place-items: top;
-     min-height:100vh;
+    min-height:100vh;
     margin-top: 100px;
-    animation: appear  linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    
 }
+.pro {
+    height: 400px;
+    width: 300px;
+    background-color: #FAFFAF;
+    border-radius: 35px;
+    margin-left: 23px;
+    display: grid;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Apply transition to transform and box-shadow */
+}
+.pro:hover {
+    transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.pro-box {
+    height: 190px;
+    width: 250px;
+    background-color: black;
+    border-radius: 60px;
+    margin-left: 25px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smoother and synchronized transitions for opacity and transform */
+}
+
+.pro-box:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+}
+.pro-text{
+    
+   
+    font-family: "Fugaz One", sans-serif;
+    text-align: center;
+   place-items: top;
+
+}
+.pro-text1{
+    font-size: 2rem;
+}
+h4{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    margin-top: 28px;
+}
+.pro-button{
+    
+    margin-top: 29px;
+}
+.pro-box {
+    position: relative; /* Set relative positioning to the parent container */
+    height: 190px;
+    width: 250px;
+    background-color: black;
+    border-radius: 60px;
+    margin-left: 25px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.pro-img {
+    position: absolute; 
+    top: 0; 
+    left: 0; /* Position at the left of the .pro-box */
+    width: 100%; /* Take the full width of the .pro-box */
+    height: 100%; /* Take the full height of the .pro-box */
+    border-radius: 60px; /* Match the border-radius of the .pro-box */
+   
+}
+
+.pro-img:hover {
+    box-shadow: 0 0 12px 4px #ffffff; /* Enhanced glow effect on hover */
+}
+
 
 
 
