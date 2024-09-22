@@ -1,8 +1,16 @@
+:root {
+    --primary-color: #3FA2F6;
+    --text-color: #EEEEEE;
+    --background-color: #1a1a2e;
+    --accent-color: #FAFFAF;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Inria Sans', Arial, sans-serif;
+    color: var(--text-color);
 }
 
 .futuristic-background {
@@ -11,7 +19,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--background-color) 0%, #16213e 50%, #0f3460 100%);
     overflow: hidden;
     z-index: -1;
 }
@@ -62,73 +70,58 @@ body, html {
 }
 
 .head {
-    color: #EEEEEE;
+    color: var(--text-color);
     font-family: "Fugaz One", sans-serif;
     font-weight: 900;
     font-size: 2rem;
     margin: 0;
 }
 
-.navbar ul {
+.nav-comp {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar ul li {
+.nav-comp li {
     margin: 0 15px;
 }
 
-.navbar ul li a {
+.nav-comp li a {
     text-decoration: none;
-    color: #EEEEEE;
+    color: var(--text-color);
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-    color: #3FA2F6;
+.nav-comp li a:hover {
+    color: var(--primary-color);
 }
 
 .button-27 {
     appearance: none;
-    background-color: #3FA2F6;
-    border: 2px solid #3FA2F6;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 25px;
-    box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: inherit;
     font-size: 16px;
     font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    min-height: 10px;
-    min-width: 0;
-    outline: none;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-    will-change: transform;
-}
-
-.button-27:disabled {
-    pointer-events: none;
 }
 
 .button-27:hover {
-    
     transform: translateY(-2px);
 }
 
 .button-27:active {
-    box-shadow: none;
     transform: translateY(0);
 }
 
@@ -136,138 +129,162 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 100px);
     text-align: center;
-    color: #FAFFAF;
-   background-image: url("./hero2.jpg");
+    color: var(--accent-color);
+    background-image: url("./hero2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-top-right-radius: 1000px;
     border-top-left-radius: 1000px;
     padding-bottom: 10px;
-    
 }
-
 
 .hero-content {
     max-width: 800px;
     padding: 20px;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 4rem;
     margin-bottom: 20px;
     font-family: "Fugaz One", sans-serif;
 }
 
-.hero h3 {
+.hero-subtitle {
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-.hero .button-27 {
-    font-size: 1.2rem;
-    padding: 15px 30px;
-}
-i{
-    padding: 40px;
-    font-size: 60px;
+.social-icons {
     margin-top: 70px;
-    
 }
-i:hover{
-    color: #3FA2F6;
-}
-.learn{
-    font-size: 4rem;
-    margin-bottom: 20px;
-    font-family: "Fugaz One", sans-serif;
-    color: #FAFFAF;
-    text-align: center;
 
+.social-icons a {
+    color: var(--accent-color);
+    font-size: 60px;
+    margin: 0 20px;
+    transition: color 0.3s;
 }
-.lang{
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.lang {
+    padding: 100px 0;
+}
+
+.learn {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    font-family: "Fugaz One", sans-serif;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.language-grid {
     display: grid;
-    align-content: top;
-    place-items: top;
-    min-height:100vh;
-    margin-top: 100px;
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
+
 .pro {
     height: 400px;
     width: 300px;
-    background-color: #FAFFAF;
+    background-color: var(--accent-color);
     border-radius: 35px;
-    margin-left: 23px;
-    display: grid;
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Apply transition to transform and box-shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
+
 .pro:hover {
     transform: translateY(-20px);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
 .pro-box {
+    position: relative;
     height: 190px;
     width: 250px;
     background-color: black;
     border-radius: 60px;
-    margin-left: 25px;
-    margin-top: 20px;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smoother and synchronized transitions for opacity and transform */
-}
-
-.pro-box:hover {
-    opacity: 0.88;
-    transform: translateY(-2px);
-}
-.pro-text{
-    
-   
-    font-family: "Fugaz One", sans-serif;
-    text-align: center;
-   place-items: top;
-
-}
-.pro-text1{
-    font-size: 2rem;
-}
-h4{
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 900;
-    font-style: bold;
-    margin-top: 28px;
-}
-.pro-button{
-    
-    margin-top: 29px;
-}
-.pro-box {
-    position: relative; /* Set relative positioning to the parent container */
-    height: 190px;
-    width: 250px;
-    background-color: black;
-    border-radius: 60px;
-    margin-left: 25px;
-    margin-top: 20px;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pro-img {
-    position: absolute; 
-    top: 0; 
-    left: 0; /* Position at the left of the .pro-box */
-    width: 100%; /* Take the full width of the .pro-box */
-    height: 100%; /* Take the full height of the .pro-box */
-    border-radius: 60px; /* Match the border-radius of the .pro-box */
-   
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transition: transform 0.3s ease-out;
 }
 
 .pro-img:hover {
-    box-shadow: 0 0 12px 4px #ffffff; /* Enhanced glow effect on hover */
+    transform: scale(1.1);
 }
+
+.pro-text {
+    text-align: center;
+    color: var(--background-color);
+}
+
+.pro-text1 {
+    font-size: 2rem;
+    font-family: "Fugaz One", sans-serif;
+    margin-bottom: 10px;
+}
+
+.pro-text p {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .nav-comp {
+        margin-top: 20px;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 40px;
+        margin: 0 10px;
+    }
+
+    .learn {
+        font-size: 3rem;
+    }
+}
+p {
+    font-size: 30px;
+    font-style: bold;
+    
+}
+.pro-button {
+    margin-top: 40px;
+}
+
+
 
 
 
