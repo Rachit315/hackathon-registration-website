@@ -284,6 +284,26 @@ p {
     margin-top: 40px;
 }
 
+.hero-button .button-27 {
+    font-size: 25px; /* Increased font size */
+    padding: 15px 30px; 
+    border-radius: 100px;
+}
+.mail{
+    background: linear-gradient(135deg, var(--background-color) 0%, #071b53 50%, #0366df 100%);
+    overflow: hidden;
+    width: 100%;
+    min-height: 55vh;
+}
+.mail-info h2{
+    font-family: "Fugaz One", sans-serif;
+    color: #FAFFAF;
+    font-size: 50px;
+    font-weight: lighter;
+    padding-left: 110px;
+    padding-top: 66px;
+}
+
 
 
 
