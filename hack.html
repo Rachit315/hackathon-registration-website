@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
@@ -112,15 +113,52 @@
             to advanced. Whether you're learning web <br>development, Python, or mastering
              data structures, we <br>provide step-by-step guidance.</p>
              <div class="search-container">
-                <input type="text" class="search-input" placeholder="Enter your mail">
-                <button class="send-button">Send</button>
+                <input type="text" id="mail" class="search-input" placeholder="Enter your mail">
+                <button onclick="location.href='./OTP.html'" id="submit" class="send-button">Send</button>
             </div>
            
     </section>
     <br>
     <br>
     <br>
-    <br>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About HACKEROLL</h3>
+                <p>HACKEROLL is your gateway to mastering coding skills. We provide free, comprehensive learning resources for aspiring developers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#developers">For Developers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Learning Paths</h3>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HACKEROLL. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
