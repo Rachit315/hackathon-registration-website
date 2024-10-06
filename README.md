@@ -1,15 +1,18 @@
-```markdown
 # HACKEROLL - Test Your Coding Skills
 
-HACKEROLL is a modern, responsive web application designed to help developers test and improve their coding skills. With a sleek, futuristic interface and a focus on learning, HACKEROLL offers a platform for both beginners and experienced coders to enhance their abilities.
+
+
+HACKEROLL is a dynamic platform designed to help aspiring developers test and enhance their coding skills. With a focus on providing free, comprehensive learning resources, HACKEROLL offers a unique blend of challenges and personalized learning paths for various programming languages.
+
 
 ## Features
 
-- **Responsive Design**: Fully responsive layout that looks great on both desktop and mobile devices.
-- **Interactive UI**: Engaging user interface with animated background and hover effects.
-- **Multiple Programming Languages**: Currently featuring Python, with plans to expand to other languages.
-- **Free Access**: 100% free to use, making coding education accessible to everyone.
-- **Social Media Integration**: Easy sharing and connection through popular social media platforms.
+- **Interactive Coding Challenges**: Test your skills with our curated set of coding problems.
+- **Multiple Programming Languages**: Support for Python, JavaScript, C++, and Java.
+- **Personalized Learning Roadmaps**: Get tailored learning paths based on your skill level and goals.
+- **Responsive Design**: Fully responsive web design for seamless experience across all devices.
+- **User Authentication**: Secure login system for personalized user experiences.
+- **Social Media Integration**: Connect and share your progress on various social platforms.
 
 ## Technologies Used
 
@@ -19,31 +22,39 @@ HACKEROLL is a modern, responsive web application designed to help developers te
 - Bootstrap 5.3.3
 - Font Awesome 6.6.0
 - Google Fonts (Fugaz One, Inria Sans)
+- Animate.css
 
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository
-```
-
-git clone [https://github.com/your-username/hackeroll.git](https://github.com/your-username/hackeroll.git)
-
-```plaintext
+   ```
+   git clone https://github.com/your-username/hackeroll.git
+   ```
 2. Navigate to the project directory
-```
-
-cd hackeroll
-
-```plaintext
+   ```
+   cd hackeroll
+   ```
 3. Open `index.html` in your browser
 
 ## Usage
 
-- Navigate through the site using the top navigation bar.
-- Click on "Get Started" to begin your coding journey.
-- Explore different programming languages and courses offered.
-- Use the "Learn More" buttons to dive deeper into specific topics.
+1. Browse through the available coding challenges on the homepage.
+2. Select a programming language you want to practice.
+3. Start solving challenges and track your progress.
+4. Use the personalized roadmap feature to guide your learning journey.
+
+## Learning Paths
+
+HACKEROLL offers comprehensive learning paths for:
+
+- Python
+- JavaScript
+- C++
+- Java
+
+Each path is designed to take you from beginner to advanced levels, covering essential concepts and practical applications.
 
 ## Contributing
 
@@ -55,15 +66,13 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
+
 rachithakur2006@gmail.com
 
-## Acknowledgements
-
-- [Bootstrap](https://getbootstrap.com)
-- [Font Awesome](https://fontawesome.com)
-- [Google Fonts](https://fonts.google.com)
-```
 
 
